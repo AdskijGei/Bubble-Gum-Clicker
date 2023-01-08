@@ -178,7 +178,7 @@ local Tab = Window:NewTab("Auto Eggs🥚")
 local Section = Tab:NewSection("Auto Open Eggs")
 Section:NewButton("Start📍 (Frosted Egg)", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
-    while task.wait(5) do
+    while task.wait(0.00000001) do
 local args = {
     [1] = {
         [1] = {
