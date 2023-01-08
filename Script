@@ -686,7 +686,7 @@ local args = {
 }
 
 workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
-end)
+end
 local Tab = Window:NewTab("Auto Buy Merchant🛒")
 local Section = Tab:NewSection("Boosts")
 Section:NewButton("Godly Luck", "um", function()
@@ -705,5 +705,7 @@ Section:NewButton("Godly Luck", "um", function()
 
 workspace.Stuff.Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(args))
 end
+end
+end)
 end
 end)
