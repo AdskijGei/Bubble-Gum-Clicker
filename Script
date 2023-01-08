@@ -214,7 +214,7 @@ end)
 local Section = Tab:NewSection("Auto Sell Bubble")
 Section:NewButton("Start📍", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
-    while task.wait(60) do
+    while task.wait(0.00000000000000000000000000000000000000001) do
 local args = {
     [1] = {
         [1] = {
@@ -232,10 +232,136 @@ end
 end)
 local Tab = Window:NewTab("Auto Eggs🥚")
 local Section = Tab:NewSection("Auto Open Eggs")
-Section:NewButton("Start📍 (Frosted Egg)", "um", function()
+Section:NewButton("Common Egg", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
-    while task.wait(0.000000000000000000000000000000000000000000000001) do
+    while task.wait(0.00000000000000000000000000000000001) do
 local args = {
+    [1] = {
+        [1] = {
+            [1] = "Common Egg"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Spotted Egg", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000001) do
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "Spotted Egg"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Safe Egg", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000001) do
+        local args = {
+    [1] = {
+        [1] = {
+            [1] = "Safe Egg"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Magma Egg", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000001) do
+        local args = {
+    [1] = {
+        [1] = {
+            [1] = "Magma Egg"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Lantern Egg", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000001) do
+        local args = {
+    [1] = {
+        [1] = {
+            [1] = "Lantern Egg"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Galaxy Egg", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000001) do
+        local args = {
+    [1] = {
+        [1] = {
+            [1] = "Galaxy Egg"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Void Egg", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000001) do
+        local args = {
+    [1] = {
+        [1] = {
+            [1] = "Void Egg"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Frosted Egg", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000001) do
+        local args = {
     [1] = {
         [1] = {
             [1] = "Frosted Egg"
@@ -306,7 +432,7 @@ workspace.Stuff.Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
 end
 end
 end)
-local Tab = Window:NewTab("Auto Group Rewards💰")
+local Tab = Window:NewTab("Auto Group Rewards🪙")
 local Section = Tab:NewSection("Auto Group Rewards")
 Section:NewButton("Auto Group Rewards", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
@@ -329,8 +455,6 @@ end)
 local Tab = Window:NewTab("Auto Free Gifts🎁")
 local Section = Tab:NewSection("Auto Free Gifts")
 Section:NewButton("Auto Free Gifts", "um", function()
-for i=1,1000000000000000000000000000000000000000000 do
-    while task.wait(0.00000000000000000000000000000000000000001) do
 local args = {
     [1] = {
         [1] = {
@@ -486,6 +610,4 @@ local args = {
 }
 
 workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
-end
-end
 end)
