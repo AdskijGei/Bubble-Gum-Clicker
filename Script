@@ -306,7 +306,7 @@ workspace.Stuff.Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
 end
 end
 end)
-local Tab = Window:NewTab("Auto Group Rewards🪙")
+local Tab = Window:NewTab("Auto Group Rewards💝")
 local Section = Tab:NewSection("Auto Group Rewards")
 Section:NewButton("Auto Group Rewards", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
