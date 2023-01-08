@@ -264,6 +264,26 @@ local args = {
 workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
 
 end)
+local Tab = Window:NewTab("Pets🐶")
+local Section = Tab:NewSection("Pets")
+Section:NewButton("Auto Equip Best", "um", function()
+    for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000000000001) do
+local args = {
+    [1] = {
+        [1] = {
+            [1] = false
+        },
+        [2] = {
+            [1] = 2
+        }
+    }
+}
+
+workspace.Stuff.Remotes:FindFirstChild("equip best pets"):FireServer(unpack(args))
+end
+end
+end)
 local Tab = Window:NewTab("Auto Bubble💗")
 local Section = Tab:NewSection("Auto Blow Bubble")
 Section:NewButton("Start📍", "um", function()
@@ -285,7 +305,7 @@ end
 end
 end)
 local Section = Tab:NewSection("Auto Sell Bubble")
-Section:NewButton("Start📍(NEVORK)", "um", function()
+Section:NewButton("Start📍", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
     while task.wait(0.00000000000000000000000000000000000000001) do
 local args = {
