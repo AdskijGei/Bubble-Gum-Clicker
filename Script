@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Bubble Gum Clicker Script❄️", "Ocean")
+local Window = Library.CreateLib("BGC Hub❄️", "Ocean")
 local Tab = Window:NewTab("Teleport🌍")
 local Section = Tab:NewSection("Worlds")
 Section:NewButton("Spawn", "Teleport Button", function()
@@ -270,8 +270,8 @@ workspace.Stuff.Remotes:FindFirstChild("get group rewards"):InvokeServer(unpack(
 end
 end
 end)
-local Tab = Window:NewTab("💀")
-local Section = Tab:NewSection("💀")
+local Tab = Window:NewTab("Misc⚙️")
+local Section = Tab:NewSection("Random Staff")
 Section:NewButton("💀", "💀", function()
 for i=1,1000000000000000000000000000000000000000000 do
     while task.wait(0.00000000000000000000000000000000000000001) do
@@ -293,4 +293,36 @@ local args = {
 workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
 end
 end
+end)
+Section:NewButton("Rejoin", "um", function()
+local tpservice= game:GetService("TeleportService")
+local plr = game.Players.LocalPlayer
+
+tpservice:Teleport(game.PlaceId, plr)
+
+workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
+end)
+Section:NewButton("AntiAfk", "um", function()
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end)
+Section:NewButton("FPS Boost", "um", function()
+local a=true;local b=game;local c=b.Workspace;local d=b.Lighting;local e=c.Terrain;e.WaterWaveSize=0;e.WaterWaveSpeed=0;e.WaterReflectance=0;e.WaterTransparency=0;d.GlobalShadows=false;d.FogEnd=9e9;d.Brightness=0;settings().Rendering.QualityLevel="Level01"for f,g in pairs(b:GetDescendants())do if g:IsA("Part")or g:IsA("Union")or g:IsA("MeshPart")or g:IsA("WedgePart")then g.Material="Plastic"g.Reflectance=0 elseif g:IsA("Decal")and a then g.Transparency=1 elseif g:IsA("ParticleEmitter")or g:IsA("Trail")then g.Lifetime=NumberRange.new(0)elseif g:IsA("Part")or g:IsA("Union")or g:IsA("MeshPart")or g:IsA("WedgePart")and g.Transparency<1 and g.Transparency>0.3 then g.Transparency=1 end end;for f,h in pairs(d:GetChildren())do if h:IsA("BlurEffect")or h:IsA("SunRaysEffect")or h:IsA("ColorCorrectionEffect")or h:IsA("BloomEffect")or h:IsA("DepthOfFieldEffect")then h.Enabled=false end end
+end)
+Section:NewButton("CPU Boost", "um", function()
+local rs = game:service'RunService'
+local uis = game:service'UserInputService'
+local function render(enabled)
+    rs:Set3dRenderingEnabled(enabled)
+end
+uis.WindowFocusReleased:Connect(function()
+    render(false)
+end)
+uis.WindowFocused:Connect(function()
+    render(true)
+end)
 end)
