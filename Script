@@ -308,7 +308,7 @@ end)
 local Section = Tab:NewSection("Auto Sell Bubble")
 Section:NewButton("Start📍", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
-    while task.wait(60) do
+    while task.wait(0.00000000000000000000000000000000000000001) do
 local args = {
     [1] = {
         [1] = {
