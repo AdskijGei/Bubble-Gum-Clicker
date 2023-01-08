@@ -486,4 +486,6 @@ local args = {
 }
 
 workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+end
+end
 end)
