@@ -329,6 +329,8 @@ end)
 local Tab = Window:NewTab("Auto Free Gifts🎁")
 local Section = Tab:NewSection("Auto Free Gifts")
 Section:NewButton("Auto Free Gifts", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000000000001) do
 local args = {
     [1] = {
         [1] = {
