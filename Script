@@ -251,7 +251,7 @@ end
 end
 end)
 local Tab = Window:NewTab("Auto Group Rewards🎁")
-local Section = Tab:NewSection("Group Rewards Button")
+local Section = Tab:NewSection("Auto Group Rewards")
 Section:NewButton("Auto Group Rewards", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
     while task.wait(0.00000000000000000000000000000000000000001) do
