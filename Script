@@ -30,8 +30,6 @@ end)
 Section:NewButton("infinite Yield", "💀", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end)
-Section:NewButton("Server Hop", "um", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/0KSKXzGs"))()
 Section:NewButton("Rejoin", "um", function()
 local tpservice= game:GetService("TeleportService")
 local plr = game.Players.LocalPlayer
