@@ -33,6 +33,7 @@ Section:NewButton("infinite Yield", "💀", function()
 Section:NewButton("Server Hop", "um", function()
 local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
 module:Teleport(game.PlaceId)
+end)
 Section:NewButton("Rejoin", "um", function()
 local tpservice= game:GetService("TeleportService")
 local plr = game.Players.LocalPlayer
