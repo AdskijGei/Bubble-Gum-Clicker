@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Dick Hub🦇", "Ocean")
+local Window = Library.CreateLib("Bubble Gum Clicker Script❄️", "Ocean")
 local Tab = Window:NewTab("Teleport🌍")
 local Section = Tab:NewSection("Worlds")
 Section:NewButton("Spawn", "Teleport Button", function()
