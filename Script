@@ -24,6 +24,12 @@ workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
 end
 end
 end)
+Section:NewButton("SimpleSpy", "um", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua'))()
+end)
+Section:NewButton("infinite Yield", "💀", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end)
 Section:NewButton("Rejoin", "um", function()
 local tpservice= game:GetService("TeleportService")
 local plr = game.Players.LocalPlayer
@@ -432,7 +438,7 @@ workspace.Stuff.Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
 end
 end
 end)
-local Tab = Window:NewTab("Auto Group Rewards🪙")
+local Tab = Window:NewTab("Auto Group Rewards💰")
 local Section = Tab:NewSection("Auto Group Rewards")
 Section:NewButton("Auto Group Rewards", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
