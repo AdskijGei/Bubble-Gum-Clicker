@@ -280,7 +280,7 @@ local args = {
         }
     }
 }
-
+end
 workspace.Stuff.Remotes:FindFirstChild("equip best pets"):FireServer(unpack(args))
 local Tab = Window:NewTab("Auto Bubble💗")
 local Section = Tab:NewSection("Auto Blow Bubble")
@@ -724,5 +724,7 @@ Section:NewButton("Godly Luck", "um", function()
 
 workspace.Stuff.Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(args))
 end
+end
+end)
 end
 end)
