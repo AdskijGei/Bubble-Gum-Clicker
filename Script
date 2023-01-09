@@ -728,3 +728,21 @@ workspace.Stuff.Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(ar
 end
 end
 end)
+Section:NewButton("Fast Hatch", "um", function()
+    for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000000000001) do
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "Fast Hatch"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+workspace.Stuff.Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(args))
+end
+end
+end)
