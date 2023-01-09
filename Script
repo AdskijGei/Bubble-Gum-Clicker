@@ -24,6 +24,28 @@ workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
 end
 end
 end)
+Section:NewButton("Snowfall", "um", function()
+    for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000000000001) do
+local u1 = nil;
+coroutine.wrap(function()
+	u1 = require(game.ReplicatedStorage:WaitForChild("Nevermore"):WaitForChild("Library"));
+end)();
+while not u1.Loaded do
+	game:GetService("RunService").Heartbeat:Wait();
+end;
+local v1 = u1.Assets.Models.Snow:Clone();
+v1.Parent = workspace;
+u1.RunService.RenderStepped:Connect(function()
+	local v2 = u1.LocalPlayer.Character and u1.LocalPlayer.Character.PrimaryPart;
+	if not v2 then
+		return;
+	end;
+	v1.CFrame = CFrame.new(v2.Position) + Vector3.new(0, 100, 0);
+end);
+end
+end
+end)
 Section:NewButton("SimpleSpy", "um", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua'))()
 end)
