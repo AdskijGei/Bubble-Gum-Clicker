@@ -251,7 +251,6 @@ local args = {
 }
 
 workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
-
 end)
 Section:NewButton("Fairy World", "Teleport Button", function()
 local args = {
