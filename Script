@@ -285,7 +285,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("equip best pets"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("equip best pets"):FireServer(unpack(args))
 end
 end
 end)
@@ -305,7 +305,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("blow bubble"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("blow bubble"):FireServer(unpack(args))
 end
 end
 end)
@@ -325,7 +325,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("sell bubbles"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("sell bubbles"):FireServer(unpack(args))
 
 end
 end
@@ -346,7 +346,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
 end
 end)
@@ -364,7 +364,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
 end
 end)
@@ -382,7 +382,7 @@ for i=1,1000000000000000000000000000000000000000000 do
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
 end
 end)
@@ -400,7 +400,7 @@ for i=1,1000000000000000000000000000000000000000000 do
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
 end
 end)
@@ -418,7 +418,7 @@ for i=1,1000000000000000000000000000000000000000000 do
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
 end
 end)
@@ -436,7 +436,7 @@ for i=1,1000000000000000000000000000000000000000000 do
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
 end
 end)
@@ -454,14 +454,14 @@ for i=1,1000000000000000000000000000000000000000000 do
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
 end
 end)
 Section:NewButton("Frosted Egg", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
     while task.wait(0.00000000000000000000000000000000001) do
-        local args = {
+local args = {
     [1] = {
         [1] = {
             [1] = "Frosted Egg"
@@ -472,7 +472,7 @@ for i=1,1000000000000000000000000000000000000000000 do
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
 end
 end)
@@ -492,7 +492,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
 end
 end
 end)
@@ -510,7 +510,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
 end
 end
 end)
@@ -528,7 +528,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
 end
 end
 end)
@@ -548,7 +548,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("get group rewards"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("get group rewards"):FireServer(unpack(args))
 end
 end
 end)
@@ -568,7 +568,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -581,7 +581,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -594,7 +594,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -607,7 +607,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -620,7 +620,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -633,7 +633,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -646,7 +646,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -659,7 +659,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -672,7 +672,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -685,7 +685,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -698,7 +698,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 
 local args = {
     [1] = {
@@ -711,7 +711,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
 end
 end
 end)
@@ -731,7 +731,7 @@ Section:NewButton("Godly Luck", "um", function()
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(args))
 end
 end
 end)
@@ -749,7 +749,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(args))
 end
 end
 end)
