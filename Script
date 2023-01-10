@@ -296,16 +296,15 @@ Section:NewButton("Auto Equip Best", "um", function()
 local args = {
     [1] = {
         [1] = {
-            [1] = true
+            [1] = false
         },
         [2] = {
-            [1] = false
+            [1] = 2
         }
     }
 }
 
-workspace.Stuff.Remotes:FindFirstChild("sell bubbles"):FireServer(unpack(args))
-
+workspace.Stuff.Remotes:FindFirstChild("equip best pets"):FireServer(unpack(args))
 end
 end
 end)
