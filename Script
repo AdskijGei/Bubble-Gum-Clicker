@@ -569,7 +569,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -582,7 +582,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -595,7 +595,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -608,7 +608,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -621,7 +621,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -634,7 +634,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -647,7 +647,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -660,7 +660,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -673,7 +673,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -686,7 +686,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -699,7 +699,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 
 local args = {
     [1] = {
@@ -712,7 +712,7 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem free gift"):InvokeServer(unpack(args))
 end
 end
 end)
