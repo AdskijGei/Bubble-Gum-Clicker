@@ -548,7 +548,8 @@ local args = {
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("get group rewards"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("get pickups"):InvokeServer(unpack(args))
+
 end
 end
 end)
