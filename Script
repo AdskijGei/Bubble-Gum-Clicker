@@ -2,26 +2,6 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("BGC Hub❄️", "Ocean")
 local Tab = Window:NewTab("Misc⚙️")
 local Section = Tab:NewSection("Random Staff")
-Section:NewButton("💀", "💀", function()
-for i=1,1000000000000000000000000000000000000000000 do
-    while task.wait(0.00000000000000000000000000000000000000001) do
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "Spawn World",
-            [2] = "Heaven"
-        },
-        [2] = {
-            [1] = false,
-            [2] = false
-        }
-    }
-}
-
-workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
-end
-end
-end)
 Section:NewButton("Snowfall", "um", function()
     for i=1,1000000000000000000000000000000000000000000 do
     while task.wait(0.00000000000000000000000000000000000000001) do
@@ -166,7 +146,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
 
 end)
 Section:NewButton("Sky Island", "Teleport Button", function()
@@ -183,7 +163,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
 end)
 Section:NewButton("Lucky Landing", "Teleport Button", function()
 local args = {
@@ -199,7 +179,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
 
 end)
 Section:NewButton("Heaven", "Teleport Button", function()
@@ -216,7 +196,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
 
 end)
 Section:NewButton("Space", "Teleport Button", function()
@@ -233,7 +213,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
 
 end)
 Section:NewButton("The Void", "Teleport Button", function()
@@ -250,7 +230,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
 end)
 Section:NewButton("Fairy World", "Teleport Button", function()
 local args = {
@@ -266,7 +246,7 @@ local args = {
     }
 }
 
-workspace.Stuff.Remotes.teleport:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
 
 end)
 local Tab = Window:NewTab("Pets🐶")
