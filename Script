@@ -456,6 +456,24 @@ game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeSer
 end
 end
 end)
+Section:NewButton("Banana Bandana on Nana Egg", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000001) do
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "Banana Bandana on Nana Egg"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+end
+end
+end)
 local Tab = Window:NewTab("Auto Chests🧰")
 local Section = Tab:NewSection("Chests")
 Section:NewButton("Sky Chest", "um", function()
