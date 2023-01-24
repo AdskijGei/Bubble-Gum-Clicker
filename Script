@@ -451,6 +451,24 @@ game:GetService("ReplicatedStorage").Remotes:FindFirstChild("collect chest"):Fir
 end
 end
 end)
+Section:NewButton("VIP Chest", "um", function()
+    for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(1) do
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "VIP Chest"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("collect chest"):FireServer(unpack(args))
+end
+end
+end)
 local Tab = Window:NewTab("Codes#️⃣")
 local Section = Tab:NewSection("Redeem All Codes(BETA)")
 Section:NewButton("Redeem All Codes", "um", function()
