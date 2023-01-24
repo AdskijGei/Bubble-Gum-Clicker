@@ -27,9 +27,12 @@ end)
 Section:NewButton("SimpleSpy", "um", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua'))()
 end)
-Section:NewButton("infinite Yield", "💀", function()
+Section:NewButton("infinite Yield", "um", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
+Section:NewButton("Off Everything", "um", function()
+    game:GetService("Players").LocalPlayer:Kick("Я говнокодер и лучше такого сделать не могу")
+    end)
 Section:NewButton("Server Hop", "um", function()
     Time = 1 -- seconds
 repeat wait() until game:IsLoaded()
@@ -129,141 +132,6 @@ end)
 uis.WindowFocused:Connect(function()
     render(true)
 end)
-end)
-local Tab = Window:NewTab("Teleport🌍")
-local Section = Tab:NewSection("Worlds")
-Section:NewButton("Spawn", "Teleport Button", function()
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "Spawn World",
-            [2] = "Spawn"
-        },
-        [2] = {
-            [1] = false,
-            [2] = false
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
-
-end)
-Section:NewButton("Sky Island", "Teleport Button", function()
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "Spawn World",
-            [2] = "Sky Island"
-        },
-        [2] = {
-            [1] = false,
-            [2] = false
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
-end)
-Section:NewButton("Lucky Landing", "Teleport Button", function()
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "Spawn World",
-            [2] = "Lucky Landing"
-        },
-        [2] = {
-            [1] = false,
-            [2] = false
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
-
-end)
-Section:NewButton("Heaven", "Teleport Button", function()
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "Spawn World",
-            [2] = "Heaven"
-        },
-        [2] = {
-            [1] = false,
-            [2] = false
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
-
-end)
-Section:NewButton("Space", "Teleport Button", function()
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "Spawn World",
-            [2] = "Space"
-        },
-        [2] = {
-            [1] = false,
-            [2] = false
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
-
-end)
-Section:NewButton("The Void", "Teleport Button", function()
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "Spawn World",
-            [2] = "The Void"
-        },
-        [2] = {
-            [1] = false,
-            [2] = false
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
-end)
-Section:NewButton("Fairy World", "Teleport Button", function()
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "Spawn World",
-            [2] = "Fairy World"
-        },
-        [2] = {
-            [1] = false,
-            [2] = false
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
-end)
-Section:NewButton("XP Island", "Teleport Button", function()
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "Spawn World",
-            [2] = "XP Island"
-        },
-        [2] = {
-            [1] = false,
-            [2] = false
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage").Remotes.teleport:FireServer(unpack(args))
-
 end)
 local Tab = Window:NewTab("Pets🐶")
 local Section = Tab:NewSection("Pets")
@@ -583,23 +451,193 @@ game:GetService("ReplicatedStorage").Remotes:FindFirstChild("collect chest"):Fir
 end
 end
 end)
-local Tab = Window:NewTab("Auto Group Rewards💰")
-local Section = Tab:NewSection("Auto Group Rewards")
-Section:NewButton("Auto Group Rewards", "um", function()
-for i=1,1000000000000000000000000000000000000000000 do
-    while task.wait(0.00000000000000000000000000000000000000001) do
+local Tab = Window:NewTab("Codes#️⃣")
+local Section = Tab:NewSection("Redeem All Codes(BETA)")
+Section:NewButton("Redeem All Codes", "um", function()
+for i=1,100 do
+    while task.wait(0.01) do
 local args = {
     [1] = {
         [1] = {
-            [1] = false
+            [1] = "lucky"
         },
         [2] = {
-            [1] = 2
+            [1] = false
         }
     }
 }
 
-game:GetService("ReplicatedStorage").Remotes:FindFirstChild("get group rewards"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "banana"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "bandana"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "nana"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "OPE"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "scramble"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "stayfrosty"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "happynewyear"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "2022"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "OmgSanta"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "Rudolph"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "Release"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "season1"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
+
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "bubblegum"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("redeem twitter code"):InvokeServer(unpack(args))
 end
 end
 end)
@@ -805,7 +843,7 @@ end
 end
 end)
 local Tab = Window:NewTab("Auto Collect📥")
-local Section = Tab:NewSection("Auto Collect")
+local Section = Tab:NewSection("Auto Collect Loot Bags")
 Section:NewButton("Auto Collect Loot Bags", "um", function()
 for i=1,1000000000000000000000000000000000000000000 do
     while task.wait(120) do
@@ -833,6 +871,25 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Remotes:FindFirstChild("free wheel spin"):InvokeServer(unpack(args))
+end
+end
+end)
+local Section = Tab:NewSection("Auto Group Rewards")
+Section:NewButton("Auto Group Rewards", "um", function()
+for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000000000001) do
+local args = {
+    [1] = {
+        [1] = {
+            [1] = false
+        },
+        [2] = {
+            [1] = 2
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("get group rewards"):InvokeServer(unpack(args))
 end
 end
 end)
