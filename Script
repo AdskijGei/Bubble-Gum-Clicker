@@ -232,22 +232,24 @@ game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeSer
 end
 end
 end)
-Section:NewButton("Safe Egg", "um", function()
+Section:NewButton("Safe Egg(X3)", "um", function()
      for i=1,1000000000000000000000000000000000000000000 do
-    while task.wait(0.00000000000000000000000000000000000000001) do local args = {
+    while task.wait(0.00000000000000000000000000000000000000001) do
+local args = {
     [1] = {
         [1] = {
-            [1] = "Safe Egg"
+            [1] = "Safe Egg",
+            [2] = true
         },
         [2] = {
-            [1] = false
+            [1] = false,
+            [2] = false
         }
     }
 }
 
 game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
-
 end
 end)
 Section:NewButton("Magma Egg", "um", function()
@@ -849,6 +851,42 @@ local args = {
     [1] = {
         [1] = {
             [1] = "Fast Hatch"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Super Lucky", "um", function()
+    for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000000000001) do
+    local args = {
+    [1] = {
+        [1] = {
+            [1] = "Super Lucky"
+        },
+        [2] = {
+            [1] = false
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy merchant item"):FireServer(unpack(args))
+end
+end
+end)
+Section:NewButton("x3 Shiny Luck", "um", function()
+    for i=1,1000000000000000000000000000000000000000000 do
+    while task.wait(0.00000000000000000000000000000000000000001) do
+        local args = {
+    [1] = {
+        [1] = {
+            [1] = "3x Shiny Luck"
         },
         [2] = {
             [1] = false
