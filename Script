@@ -118,6 +118,9 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 end)
 end)
 Section:NewButton("FPS Boost", "um", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/49xi/Egg-Counter/main/MainModule.lua"))()
+    end)
+Section:NewButton("FPS Boost", "um", function()
 local a=true;local b=game;local c=b.Workspace;local d=b.Lighting;local e=c.Terrain;e.WaterWaveSize=0;e.WaterWaveSpeed=0;e.WaterReflectance=0;e.WaterTransparency=0;d.GlobalShadows=false;d.FogEnd=9e9;d.Brightness=0;settings().Rendering.QualityLevel="Level01"for f,g in pairs(b:GetDescendants())do if g:IsA("Part")or g:IsA("Union")or g:IsA("MeshPart")or g:IsA("WedgePart")then g.Material="Plastic"g.Reflectance=0 elseif g:IsA("Decal")and a then g.Transparency=1 elseif g:IsA("ParticleEmitter")or g:IsA("Trail")then g.Lifetime=NumberRange.new(0)elseif g:IsA("Part")or g:IsA("Union")or g:IsA("MeshPart")or g:IsA("WedgePart")and g.Transparency<1 and g.Transparency>0.3 then g.Transparency=1 end end;for f,h in pairs(d:GetChildren())do if h:IsA("BlurEffect")or h:IsA("SunRaysEffect")or h:IsA("ColorCorrectionEffect")or h:IsA("BloomEffect")or h:IsA("DepthOfFieldEffect")then h.Enabled=false end end
 end)
 Section:NewButton("CPU Boost", "um", function()
@@ -220,10 +223,12 @@ for i=1,1000000000000000000000000000000000000000000 do
 local args = {
     [1] = {
         [1] = {
-            [1] = "Spotted Egg"
+            [1] = "Spotted Egg",
+            [2] = true
         },
         [2] = {
-            [1] = false
+            [1] = false,
+            [2] = false
         }
     }
 }
@@ -258,15 +263,14 @@ for i=1,1000000000000000000000000000000000000000000 do
         local args = {
     [1] = {
         [1] = {
-            [1] = "Magma Egg",
-            [2] = true
+            [1] = "Magma Egg"
         },
         [2] = {
-            [1] = false,
-            [2] = false
+            [1] = false
         }
     }
 }
+
 game:GetService("ReplicatedStorage").Remotes:FindFirstChild("buy egg"):InvokeServer(unpack(args))
 end
 end
@@ -313,12 +317,10 @@ for i=1,1000000000000000000000000000000000000000000 do
         local args = {
     [1] = {
         [1] = {
-            [1] = "Void Egg",
-            [2] = true
+            [1] = "Void Egg"
         },
         [2] = {
-            [1] = false,
-            [2] = false
+            [1] = false
         }
     }
 }
